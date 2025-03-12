@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+button:hover
+{
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+#rating:hover
+{
+  transform: scale(1.02);
+  cursor: pointer;
+}             
+
+#houses:hover
+{
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+#heroButton:hover
+{
+  transform: scale(1.1);
+  cursor: pointer;
+}
