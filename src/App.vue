@@ -1,3 +1,4 @@
+<!-- User: Sid van Eijndhoven -->
 <template>    
 <div class="font-sans bg-gray-50">
   <router-view v-if="[ 'contact', 'properties' ].includes($route.path.replace('/', ''))"></router-view>
