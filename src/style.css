@@ -24,5 +24,12 @@ button:hover
   cursor: pointer;
 }
 
+
+#teamImg:hover
+{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
             
 
