@@ -8,7 +8,7 @@
          <Nav></Nav>
         <!-- Hero section -->
         <section class="relative w-full min-h-screen">
-          <div class="absolute inset-x-0 top-10 text-center py-8 bg-black/50">
+          <div class="absolute inset-x-0 top-10 text-center py-8 bg-black/50" id="heroText">
             <h2 class="text-4xl font-bold text-white">Welcome</h2>
             <p class="text-lg text-white">Check out our latest listings📃</p>
             <button class="mt-5 bg-black text-white px-6 py-2 rounded-lg hover:bg-blue-500" id="heroButton">Check out!</button>
@@ -17,7 +17,7 @@
         </section>
 
       <!-- Featured Properties Section -->
-        <section class="py-16">
+        <section class="py-16" ref="properties">
           <div class="max-w-screen-xl mx-auto text-center mb-12">
             <h2 class="text-3xl font-semibold text-gray-800">Featured Properties</h2>
             <p class="text-lg text-gray-600">Los Angeles - Live like the stars⭐</p>
@@ -105,17 +105,34 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import Nav from './components/Nav.vue'
 import Footer from './components/Footer.vue'
+import { onMounted, ref } from "vue";
+import { animate } from "motion";
+import { useIntersectionObserver } from "@vueuse/core";
 
-export default {
-  name: 'App',
-  components: {
-    Nav,
-    Footer
+// maakt een ref aan voor de animiatie 
+const properties = ref(null); 
+
+// om de animatie te laten zien
+useIntersectionObserver(properties, ([{ isIntersecting }]) => {
+  if (isIntersecting) {
+    animate(properties.value, { opacity: [0, 1], scale: [0.8, 1] }, { duration: 1, easing: "ease-out" });
   }
-}
+});
+
+onMounted(() => {
+  setTimeout(() => {
+    animate("#heroText", { x: [-600, 0], duration: 2, easing: "ease-in-out" });
+  }, 500);
+
+  setTimeout(() => {
+    animate("#heroButton", { x: [600, 0], duration: 2, easing: "ease-in-out" });
+  }, 1100);
+
+
+});
 
 </script>
 
