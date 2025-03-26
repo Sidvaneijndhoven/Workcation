@@ -11,7 +11,7 @@
           <div class="absolute inset-x-0 top-10 text-center py-8 bg-black/50" id="heroText">
             <h2 class="text-4xl font-bold text-white">Welcome</h2>
             <p class="text-lg text-white">Check out our latest listings📃</p>
-            <button class="mt-5 bg-black text-white px-6 py-2 rounded-lg hover:bg-blue-500" id="heroButton">Check out!</button>
+            <button class="mt-5 bg-black text-white px-6 py-2 rounded-lg hover:bg-blue-500" id="heroButton" @click="showError()">Check out!</button>
           </div>
           <img src="./assets/media/house5.png" alt="House" class="w-full h-screen object-cover" />
         </section>
@@ -34,7 +34,7 @@
                 <p class="text-gray-600">3 Beds, 2 Baths</p>
                 <p class="text-xl font-semibold text-gray-800 mt-2">$455,000</p>
                 <img id="rating" src="./assets/media/rating.png" alt="House" class="w-25 h-16 object-cover" />
-                <button class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-500">View Details</button>
+                <button class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-500" @click="showError()">View Details</button>
               </div>
             </div>
 
@@ -46,7 +46,7 @@
                 <p class="text-gray-600">2 Beds, 2 Baths</p>
                 <p class="text-xl font-semibold text-gray-800 mt-2">$520,000</p>
                 <img id="rating" src="./assets/media/rating.png" alt="House" class="w-25 h-16 object-cover" />
-                <button class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-500">View Details</button>
+                <button class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-500" @click="showError()">View Details</button>
               </div>
             </div>
             
@@ -58,7 +58,7 @@
                 <p class="text-gray-600">3 Beds, 2 Baths</p>
                 <p class="text-xl font-semibold text-gray-800 mt-2">$465,000</p>
                 <img id="rating" src="./assets/media/rating.png" alt="House" class="w-25 h-16 object-cover" />
-                <button class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-500">View Details</button>
+                <button class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-500" @click="showError()">View Details</button>
               </div>
             </div>
             
@@ -70,7 +70,7 @@
                 <p class="text-gray-600">5 Beds, 1 Bath</p>
                 <p class="text-xl font-semibold text-gray-800 mt-2">$350,000</p>
                 <img id="rating" src="./assets/media/rating.png" alt="House" class="w-25 h-16 object-cover" />
-                <button class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-500">View Details</button>
+                <button class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-500" @click="showError()">View Details</button>
               </div>
             </div>
 
@@ -82,7 +82,7 @@
                 <p class="text-gray-600">5 Beds, 2 Baths</p>
                 <p class="text-xl font-semibold text-gray-800 mt-2">$430,000</p>
                 <img id="rating" src="./assets/media/rating.png" alt="House" class="w-25 h-16 object-cover" />
-                <button class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-500">View Details</button>
+                <button class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-500" @click="showError()">View Details</button>
               </div>
             </div>
 
@@ -94,7 +94,7 @@
                 <p class="text-gray-600">2 Beds, 2 Baths</p>
                 <p class="text-xl font-semibold text-gray-800 mt-2">$420,000</p>
                 <img id="rating" src="./assets/media/rating.png" alt="House" class="w-25 h-16 object-cover" />
-                <button class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-500">View Details</button>
+                <button class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-500" @click="showError()">View Details</button>
               </div>
             </div>
           </div>
@@ -111,6 +111,14 @@ import Footer from './components/Footer.vue'
 import { onMounted, ref } from "vue";
 import { animate } from "motion";
 import { useIntersectionObserver } from "@vueuse/core";
+import { useToast } from "vue-toastification";
+
+// pop-up message
+const toast = useToast();
+
+const showError = () => {
+  toast.error("👷‍♂️ We're sorry, but this is still in development. 🚧");
+};
 
 // maakt een ref aan voor de animiatie 
 const properties = ref(null); 

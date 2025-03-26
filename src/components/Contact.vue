@@ -10,6 +10,7 @@
           <h2 class="text-3xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-4xl">Meet our leadership</h2>
           <p class="mt-6 text-lg/8 text-gray-600">We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the best results for our clients.</p>
         </div>
+        <!-- Loops the persons in a list. And displays them on screen -->
         <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2" id="teamImg">
           <li v-for="person in people" :key="person.name">
             <div class="flex items-center gap-x-6">
@@ -29,7 +30,9 @@
           <h2 class="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">Contact sales</h2> 
           <p class="mt-2 text-lg/8 text-gray-800">Get in contact with us!</p>
         </div>
-        <form action="#" method="POST" class="border-1 p-5 rounded-lg mx-auto mt-16 max-w-xl sm:mt-20 bg-white" ref="contactForm">
+        <!-- Add Form tag for functionalty -->
+        <!-- Form -->
+        <div class="border-1 p-5 rounded-lg mx-auto mt-16 max-w-xl sm:mt-20 bg-white" ref="contactForm">
           <img id="rating" src="../assets/media/logo.png" alt="House" class="w-55 h-46 object-cover m-auto p-0" style="margin-bottom: 50px;" />
           <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div>
@@ -95,7 +98,7 @@
           <div class="mt-10">
             <button @click="showSuccess()" class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Let's talk</button>
           </div>
-        </form>
+        </div>
      </div>
      <!-- Find us Section -->
        <section class="bg-white py-16">
@@ -149,8 +152,7 @@ onMounted(() => {
 
 });
 
-
-
+// array met de teamleden
 const agreed = ref(false)
 
 const people = [

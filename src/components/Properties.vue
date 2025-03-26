@@ -20,7 +20,7 @@
           Workcation is a house listing website that helps users find their ideal vacation homes, whether for short-term getaways or extended stays. The platform features a variety of properties, from beachfront villas to cozy countryside cabins, catering to travelers looking for both relaxation and productivity.
         </p>
   
-        <div class="mt-4 md:mt-8" id="startedButton">
+        <div class="mt-4 md:mt-8" id="startedButton" @click="showError()">
           <a
             href="#"
             class="inline-block rounded-sm bg-blue-800 px-12 py-3 text-sm font-medium text-white transition hover:bg-blue-400 focus:ring-3 focus:ring-yellow-400 focus:outline-hidden"
@@ -621,6 +621,15 @@ import Footer from '../components/Footer.vue'
 import { onMounted, ref } from "vue";
 import { animate } from "motion";
 import { useIntersectionObserver } from "@vueuse/core";
+import { useToast } from "vue-toastification";
+
+// pop-up message
+const toast = useToast();
+
+const showError = () => {
+  toast.error("👷‍♂️ We're sorry, but this is still in development. 🚧");
+};
+
 
 // maakt een ref aan voor de animiatie 
 const propertieImg = ref(null);
