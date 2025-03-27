@@ -3,6 +3,7 @@
       <header class="bg-white shadow-lg py-4">
         <div class="max-w-screen-xl mx-auto flex flex-wrap justify-between items-center px-4">
           <div class="flex items-center space-x-4">
+            <!-- Router link to page -->
             <router-link to="/home">
               <img id="rating" src="../assets/media/logo.png" alt="House" class="w-25 h-16 object-cover m-0 p-0"/>
             </router-link>
