@@ -294,7 +294,8 @@
                   src="../assets/media/house1.png"
                   alt=""
                   class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
-                />
+                /> 
+                <!-- [] om een specifieke px waarde op te geven -->
                 <div class="relative bg-white pt-3">
                   <h3
                     class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4"

@@ -1,3 +1,8 @@
+<!-- 
+    User: Sid van Eijndhoven
+    Date: 27-3-2025
+    File: Contact.vue
+  -->
 <template>
   <div class="isolate bg-white flex flex-col min-h-screen">
     <Nav class="absolute top-0 left-0 w-full z-10"></Nav>

@@ -1,7 +1,11 @@
-<!-- User: Sid van Eijndhoven -->
+<!-- 
+    User: Sid van Eijndhoven
+    Date: 27-3-2025
+    File: App.vue
+  -->
 <template>    
 <div class="font-sans bg-gray-50">
-  <router-view v-if="[ 'contact', 'properties' ].includes($route.path.replace('/', ''))"></router-view>
+  <router-view v-if="[ 'contact', 'properties', 'login' ].includes($route.path.replace('/', ''))"></router-view>
     <div class="render" v-else>
 
         <!-- Nav -->

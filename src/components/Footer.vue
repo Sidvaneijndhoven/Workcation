@@ -1,3 +1,8 @@
+<!-- 
+    User: Sid van Eijndhoven
+    Date: 27-3-2025
+    File: Footer.vue
+  -->
 <template>
       <!-- Footer -->
       <footer class="bg-gray-800 text-white py-6">
