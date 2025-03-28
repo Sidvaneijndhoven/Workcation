@@ -18,6 +18,7 @@
     "vue-toastification": "^2.0.0-rc.5"
   },
   "devDependencies": {
+    "@tailwindcss/vite": "^4.0.17",
     "@vitejs/plugin-vue": "^5.2.1",
     "vite": "^6.2.0"
   }
