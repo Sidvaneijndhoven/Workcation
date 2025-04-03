@@ -10,12 +10,13 @@
                 <Nav class="absolute top-0 left-0 w-full z-10"></Nav>
                 <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]" aria-hidden="true"></div>
                 <!-- Main Content -->
+                 <!-- Zorgt ervoor dat als het scherm groot is er 2 grids zijn en klein 1 grid -->
                 <div class="flex-1 grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 mt-20">
                     <div class="w-full h-full">
-                        <img id="rating" src="../assets/media/house1.png" alt="House" class="max-w-full h-full" />
+                        <img id="rating" src="../assets/media/house1.png" alt="House" class="max-w-full h-full mt-20 lg:mt-0" />
                     </div>
                     <div class="h-32">
-                        <div class="border-1 p-5 rounded-lg mx-auto mt-106 max-w-xl sm:mt-20 bg-white">
+                        <div class="p-5 rounded-lg mx-auto mt-106 max-w-xl sm:mt-0 bg-white">
                             <img id="rating" src="../assets/media/login.png" alt="Login" class="w-full max-w-[200px] h-auto object-cover m-auto p-0 mb-0" />
                             <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                                 <!-- First Name label -->
@@ -47,14 +48,14 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <button class="font-semibold block text-center mx-auto bg-orange-400 px-20 py-2 border-0 rounded hover:bg-blue-400">Login</button>
+                                    <button class="font-semibold block text-center mx-left mt-25 bg-orange-400 px-20 py-2 border-0 rounded hover:bg-blue-400">Login</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
         </div>
-        <Footer class="mt-50 w-full"></Footer>
+        <Footer class="mt-20 w-full"></Footer>
 </div>
 </template>
 
