@@ -135,6 +135,11 @@
                   "Absolutely perfect! This house has everything we were looking for: spacious rooms, a beautiful backyard, and a quiet neighborhood. The modern kitchen is a dream, and the open layout makes it perfect for entertaining. The location is ideal, with excellent schools and parks nearby. We’re thrilled with our new home!"
                 </p>
               </div>
+              <button class="w-auto m-auto border-2 rounded mt-5 p-2 bg-blue-600">
+                   <a href="https://www.trustpilot.com/review/homelister.com">
+                    <p class="text-white text-center hover:text-black">Read more reviews ➡️</p>
+                   </a>
+              </button>
             </div>
 
             <!-- Review 2 -->
@@ -160,6 +165,11 @@
                   "Absolutely perfect! This house has everything we were looking for: spacious rooms, a beautiful backyard, and a quiet neighborhood. The modern kitchen is a dream, and the open layout makes it perfect for entertaining. The location is ideal, with excellent schools and parks nearby. We’re thrilled with our new home!"
                 </p>
               </div>
+              <button class="w-auto m-auto border-2 rounded mt-5 p-2 bg-blue-600">
+                   <a href="https://www.trustpilot.com/review/homelister.com">
+                    <p class="text-white text-center hover:text-black">Read more reviews ➡️</p>
+                   </a>
+              </button>
             </div>
             <!-- Review 3 -->
             <div class="rounded-lg bg-gray-200 text-center p-5 lg:col-span-3 lg:col-start-2 mt-10" id="rating" ref="rating2">
@@ -184,6 +194,11 @@
                   "This home is exactly what we wanted! It has large, comfortable rooms, a stunning backyard, and is located in a peaceful area. The kitchen is beautifully designed, and the open-plan space is great for hosting guests. The location is also fantastic, with top-rated schools and parks close by. We couldn’t be happier with our new place!"
                 </p>
               </div>
+              <button class="w-auto m-auto border-2 rounded mt-5 p-2 bg-blue-600">
+                   <a href="https://www.trustpilot.com/review/homelister.com">
+                    <p class="text-white text-center hover:text-black">Read more reviews ➡️</p>
+                   </a>
+              </button>
             </div>
             <!-- Review 4 -->
             <div class="rounded-lg bg-gray-200 text-center p-5 lg:col-span-3 lg:col-start-5 mt-10" id="rating" ref="rating">
@@ -208,6 +223,11 @@
                   "We are really happy with our new home! It offers spacious rooms, a lovely backyard, and is situated in a quiet neighborhood. The kitchen is well-designed, and the open layout works perfectly for entertaining. The location is ideal, with excellent schools and parks nearby. While there are a couple of minor things we would improve, overall we’re thrilled with our choice!";  
                 </p>
               </div>
+              <button class="w-auto m-auto border-2 rounded mt-5 p-2 bg-blue-600">
+                   <a href="https://www.trustpilot.com/review/homelister.com">
+                    <p class="text-white text-center hover:text-black">Read more reviews ➡️</p>
+                   </a>
+              </button>
             </div>
           </div>
         </section>
