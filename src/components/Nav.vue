@@ -21,7 +21,7 @@
                     <li><a class="hover:text-blue-600 hover:cursor-pointer">Contact</a></li>
               </router-link>
               <router-link to="/login">
-                    <li><a class="hover:text-blue-600 hover:cursor-pointer">Login</a></li>
+                    <li><a class="hover:text-blue-600 hover:cursor-pointer">Login 👤</a></li>
               </router-link>
             </ul>
           </nav>

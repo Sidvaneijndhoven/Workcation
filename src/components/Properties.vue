@@ -41,7 +41,10 @@
     <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
       <header>
         <h2 class="text-xl font-bold text-gray-900 sm:text-3xl">Properties</h2>
-  
+        <input type="text" placeholder="Enter an adress, neigborhood, city or ZIP Code" class="mt-4 w-full h-10 rounded-md border-1 p-2 shadow-sm sm:text-sm" />
+        <button class="border-2 rounded mt-5 h-1/2 w-1/4 hover:bg-blue-600" @click="showError()">
+            🔍
+        </button>
         <p class="mt-4 max-w-md text-gray-500">
           Current listings📃
         </p>
