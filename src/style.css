@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+*
+{
+  font-family: system-ui;
+}
+/* Scale animations */
 button:hover
 {
   transform: scale(1.02);
@@ -23,7 +28,6 @@ button:hover
   transform: scale(1.1);
   cursor: pointer;
 }
-
 
 #teamImg:hover
 {

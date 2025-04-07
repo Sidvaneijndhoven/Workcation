@@ -5,6 +5,7 @@
 -->
 <template>  
  <div class="isolate bg-white flex flex-col min-h-screen">
+    <!-- Nav  -->
     <Nav class="absolute top-0 left-0 w-full z-10"></Nav>
     <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]" aria-hidden="true">
     </div>
@@ -29,6 +30,7 @@
         </div>
       </div>
     </div> 
+    <!-- Icon Api -->
     <img
       alt=""
       src="../assets/media/Prop.png"
