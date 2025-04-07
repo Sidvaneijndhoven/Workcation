@@ -65,7 +65,7 @@
         </button>
       </div>
       <div class="mt-4 lg:mt-8 lg:grid lg:grid-cols-4 lg:items-start lg:gap-8">
-        <div class="hidden space-y-4 lg:block">
+        <div class="mb-20 space-y-4 lg:block">
           <div>
             <label for="SortBy" class="block text-xs font-medium text-gray-700"> Sort By </label>
             <!-- Sort by filter -->

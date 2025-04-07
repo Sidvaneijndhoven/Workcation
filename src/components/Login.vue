@@ -2,7 +2,7 @@
     User: Sid van Eijndhoven
     Date: 27-3-2025
     File: Login.vue
-    Description: Login file needs grid fixed
+    Description: Needs responsive footer
   -->
 <template>
     <div class="div">

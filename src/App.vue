@@ -103,6 +103,115 @@
             </div>
           </div>
         </section>
+        <!-- Reviews Section -->
+        <section class="relative w-full min-h-screen font-semibold mt-20">
+          <div class="max-w-screen-xl mx-auto text-center mb-12">
+            <h2 class="text-3xl font-semibold text-gray-800">⭐Reviews⭐</h2>
+            <p class="text-lg text-gray-600">We are 4.6/5🌟Rated!</p>
+          </div>
+
+          <!-- Reviews Grid -->
+          <div class="grid grid-cols-1 gap-6 lg:grid-cols-8 lg:gap-4 mb-20 px-4" ref="review">
+            <!-- Review 1 -->
+            <div class="rounded-lg bg-gray-200 text-center p-5 lg:col-span-3 lg:col-start-2" id="rating" >
+              <div class="rating mt-5 text-2xl font-semibold text-gray-800">
+                5/5🌟 Rated!
+              </div>
+              <br>
+              <div class="userImg">
+                <img src="./assets/media/reviewImg.png" alt="House" class="w-1/4 h-1/4 object-cover mx-auto" />
+              </div>
+              <div class="userRate">
+                By: Harris van Weert
+              </div>
+              <div class="reviewOn border-b-2 w-1/4 mx-auto">
+                2 days ago
+              </div>
+              <br>
+              <div class="userMessage">
+                <h2>Message:</h2>
+                <br>
+                <p class="w-3/4 m-auto">  
+                  "Absolutely perfect! This house has everything we were looking for: spacious rooms, a beautiful backyard, and a quiet neighborhood. The modern kitchen is a dream, and the open layout makes it perfect for entertaining. The location is ideal, with excellent schools and parks nearby. We’re thrilled with our new home!"
+                </p>
+              </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="rounded-lg bg-gray-200 text-center p-5 lg:col-span-3 lg:col-start-5" id="rating">
+              <div class="rating mt-5 text-2xl font-semibold text-gray-800">
+                4.5/5🌟 Rated!
+              </div>
+              <br>
+              <div class="userImg">
+                <img src="./assets/media/reviewImg2.png" alt="House" class="w-1/4 h-1/4 object-cover mx-auto" />
+              </div>
+              <div class="userRate">
+                By: Lloyd de Laat
+              </div>
+              <div class="reviewOn border-b-2 w-1/4 mx-auto">
+                2 Hours ago
+              </div>
+              <br>
+              <div class="userMessage">
+                <h2>Message:</h2>
+                <br>
+                <p class="w-3/4 m-auto">  
+                  "Absolutely perfect! This house has everything we were looking for: spacious rooms, a beautiful backyard, and a quiet neighborhood. The modern kitchen is a dream, and the open layout makes it perfect for entertaining. The location is ideal, with excellent schools and parks nearby. We’re thrilled with our new home!"
+                </p>
+              </div>
+            </div>
+            <!-- Review 3 -->
+            <div class="rounded-lg bg-gray-200 text-center p-5 lg:col-span-3 lg:col-start-2 mt-10" id="rating" ref="rating2">
+              <div class="rating mt-5 text-2xl font-semibold text-gray-800">
+                4.2/5🌟 Rated!
+              </div>
+              <br>
+              <div class="userImg">
+                <img src="./assets/media/aImg.png" alt="House" class="w-1/4 h-1/4 object-cover mx-auto" />
+              </div>
+              <div class="userRate">
+                By: Anne van der Meer
+              </div>
+              <div class="reviewOn border-b-2 w-1/4 mx-auto">
+                8 Hours ago
+              </div>
+              <br>
+              <div class="userMessage">
+                <h2>Message:</h2>
+                <br>
+                <p class="w-3/4 m-auto">  
+                  "This home is exactly what we wanted! It has large, comfortable rooms, a stunning backyard, and is located in a peaceful area. The kitchen is beautifully designed, and the open-plan space is great for hosting guests. The location is also fantastic, with top-rated schools and parks close by. We couldn’t be happier with our new place!"
+                </p>
+              </div>
+            </div>
+            <!-- Review 4 -->
+            <div class="rounded-lg bg-gray-200 text-center p-5 lg:col-span-3 lg:col-start-5 mt-10" id="rating" ref="rating">
+              <div class="rating mt-5 text-2xl font-semibold text-gray-800">
+                4.1/5🌟 Rated!
+              </div>
+              <br>
+              <div class="userImg">
+                <img src="./assets/media/bImg.png" alt="House" class="w-1/4 h-1/4 object-cover mx-auto" />
+              </div>
+              <div class="userRate">
+                By: Bart van der zee
+              </div>
+              <div class="reviewOn border-b-2 w-1/4 mx-auto">
+                 12 Hours ago
+              </div>
+              <br>
+              <div class="userMessage">
+                <h2>Message:</h2>
+                <br>
+                <p class="w-3/4 m-auto">
+                  "We are really happy with our new home! It offers spacious rooms, a lovely backyard, and is situated in a quiet neighborhood. The kitchen is well-designed, and the open layout works perfectly for entertaining. The location is ideal, with excellent schools and parks nearby. While there are a couple of minor things we would improve, overall we’re thrilled with our choice!";  
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <!-- Footer -->
          <Footer></Footer>
     </div>  
@@ -126,6 +235,9 @@ const showError = () => {
 
 // maakt een ref aan voor de animiatie 
 const properties = ref(null); 
+const review = ref(null);
+const rating2 = ref(null);
+const rating = ref(null);
 
 // om de animatie te laten zien
 useIntersectionObserver(properties, ([{ isIntersecting }]) => {
@@ -133,6 +245,25 @@ useIntersectionObserver(properties, ([{ isIntersecting }]) => {
     animate(properties.value, { opacity: [0, 1], scale: [0.8, 1] }, { duration: 1, easing: "ease-out" });
   }
 });
+
+useIntersectionObserver(review, ([{ isIntersecting }]) => {
+  if (isIntersecting) {
+    animate(review.value, { opacity: [0, 1], scale: [0.8, 1] }, { duration: 1, easing: "ease-out" });
+  }
+});
+
+useIntersectionObserver(rating2, ([{ isIntersecting }]) => {
+  if (isIntersecting) {
+    animate(rating2.value, { opacity: [0, 1], scale: [0.8, 1] }, { duration: 1, easing: "ease-out" });
+  }
+});
+
+useIntersectionObserver(rating, ([{ isIntersecting }]) => {
+  if (isIntersecting) {
+    animate(rating.value, { opacity: [0, 1], scale: [0.8, 1] }, { duration: 1, easing: "ease-out" });
+  }
+});
+
 
 onMounted(() => {
   setTimeout(() => {

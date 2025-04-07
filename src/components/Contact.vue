@@ -112,8 +112,6 @@
 
 
 
-
-
     <Footer class="mt-auto"></Footer>
   </div>
 </template>

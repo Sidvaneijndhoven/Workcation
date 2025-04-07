@@ -31,5 +31,10 @@ button:hover
   cursor: pointer;
 }
 
+#reviews:hover
+{
+  transform: scale(1.01);
+  cursor: pointer;
+}
             
 
